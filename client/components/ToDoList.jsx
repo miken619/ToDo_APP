@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDoListEntry from './ToDoListEntry.jsx';
 
-export default const ToDoList = (props) => {
+const ToDoList = (props) => {
   return (
     <div>
       {props.lists.map((list, i) => 
@@ -11,5 +11,6 @@ export default const ToDoList = (props) => {
   );
 
 
-}
+};
 
+export default ToDoList;

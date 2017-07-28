@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { Form, Button, ButtonContorl } from 'react-bootstrap';
 import axios from 'axios';
 
@@ -36,9 +36,11 @@ export default class App extends Component {
     this.setState({lists: [...this.state.lists, this.state.input]});
     axios.post('/api/entries/createEntry', {
       errand: this.state.input  
-    }).then(res => {
-      console.log('Here is the response: ', res)
-    }).catch(err => {
+    })
+      .then(res => {
+      console.log('Here is the response: ', res);
+    })
+      .catch(err => {
       console.log('Error in teh axios post request for entry ', err);
     });
   }
@@ -50,7 +52,7 @@ export default class App extends Component {
         <Form>
           <input onChange={this.handleInputChange}/>
         </Form>
-        <Button bsStyle="success" onClick{this.handleSubmit}> Submit</Button>
+        <Button bsStyle="success" onClick={this.handleSubmit}> Submit</Button>
         <ToDoList lists={this.state.lists}/>
       </div>
     );

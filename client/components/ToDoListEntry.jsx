@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default const ToDoEntry = (props) => {
+const ToDoListEntry = (props) => {
   return (
     <div>
       {props.errand}
     </div>
   );
 
-}
+};
 
+export default ToDoListEntry;
 
