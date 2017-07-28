@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js",
+    "build": "webpack -w"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +22,8 @@
     "path": "^0.12.7",
     "pg": "^7.0.2",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.1",
+    "react-dom": "^15.6.1",
     "sequelize": "^4.4.2",
     "webpack": "^3.4.1"
   }
