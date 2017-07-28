@@ -53,7 +53,7 @@ export default class App extends Component {
         <Button bsStyle="success" onClick{this.handleSubmit}> Submit</Button>
         <ToDoList lists={this.state.lists}/>
       </div>
-    )
+    );
   }
 
 }
