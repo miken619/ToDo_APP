@@ -33,4 +33,4 @@ module.exports = {
         console.log('Error in creating entries');
     });
   }
-}
+};
